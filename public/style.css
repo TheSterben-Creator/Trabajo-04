@@ -1,0 +1,158 @@
+body {
+    margin: 0; /* Elimina márgenes por defecto */
+    padding: 0; /* Elimina padding por defecto */
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    background-image: url('fondo.jpg'); /* Cambia 'fondo.jpg' al nombre de tu imagen */
+    background-size: cover; /* La imagen cubre todo el fondo */
+    background-position: center; /* Centra la imagen de fondo */
+    background-repeat: no-repeat; /* No repite la imagen */
+    min-height: 100vh; /* Asegura que el body cubra al menos el 100% de la altura de la ventana */
+    color: #d1d1d1; /* Gris claro suave */
+}
+
+.container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 50%; /* Ajuste del ancho para más espacio */
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(61, 74, 90, 0.8); /* Color de fondo con opacidad */
+    padding: 30px;
+    border: 2px solid #b8c1ec; /* Azul pastel claro */
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center; /* Centra el texto */
+    color: #a0c4ff; /* Azul claro pastel */
+    margin: 0; /* Elimina el margen por defecto */
+    padding: 20px 0; /* Añade algo de padding para espacio alrededor */
+}
+
+.search {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 15px 10px;
+    outline: none;
+    width: 70%; /* Ajuste del ancho del input */
+    background-color: #3a4756; /* Gris oscuro suave */
+    color: #d1d1d1; /* Gris claro */
+    border: 2px solid #a0c4ff; /* Azul pastel */
+    font-size: 1.2em;
+    border-radius: 10px 0 0 10px;
+}
+
+.btn-add {
+    padding: 10px 20px; /* Cambiar el padding para que sea más consistente */
+    border: none;
+    color: #fff; /* Color de texto blanco */
+    background-color: #4CAF50; /* Verde */
+    font-size: 1.1em; /* Tamaño de fuente más pequeño */
+    font-family: Arial, Helvetica, sans-serif; /* Tipografía similar a la del select */
+    outline: none;
+    border-radius: 5px; /* Bordes redondeados para un estilo uniforme */
+}
+
+.btn-add:hover {
+    cursor: pointer;
+    background-color: #45a049; /* Verde más oscuro al pasar el ratón */
+}
+
+.li-container {
+    background-color: #3d4a5a;
+    width: 100%;
+    color: #d1d1d1;
+    margin-top: 20px;
+    border-radius: 10px;
+    max-height: 400px; /* Limitar la altura */
+    overflow-y: auto; /* Añadir scroll si es necesario */
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+    background-color: #465563; /* Gris azulado */
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 10px;
+    display: flex; /* Cambia a flex */
+    justify-content: space-between; /* Espacio entre elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+}
+
+/* Contenedor para los botones */
+.button-container {
+    margin-left: auto; /* Empuja los botones a la derecha */
+    display: flex; /* Mantiene los botones alineados en línea */
+    gap: 5px; /* Espacio entre los botones, opcional */
+}
+
+/* Botón Completar Tarea */
+.btn-complete {
+    border: none;
+    background-color: #4CAF50; /* Verde */
+    color: white;
+    padding: 10px;
+    outline: none;
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 1em; /* Tamaño de fuente */
+    cursor: pointer; /* Cambiar el cursor al pasar el ratón */
+}
+
+/* Botón Eliminar */
+.btn-delete {
+    border: none;
+    background-color: #f28f8f; /* Rojo pastel claro */
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    outline: none;
+    border-radius: 50%; /* Hacer el botón redondo */
+    font-size: 1.2em;
+    width: 40px; /* Hacer el botón circular */
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-delete:hover {
+    cursor: pointer;
+    background-color: #f2a1a1; /* Rojo pastel más suave */
+}
+
+.empty {
+    color: #a0c4ff; /* Azul claro pastel */
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+/* Estilo para la tarea completada */
+.completed {
+    color: green; /* Cambia el color del texto a verde */
+    text-decoration: line-through; /* Opcional: Tachar el texto */
+}
+.error-message {
+    margin-top: 10px;
+    font-size: 1em; /* Ajusta el tamaño de la fuente según sea necesario */
+    color: red; /* Color rojo para el mensaje de error */
+    text-align: center; /* Centra el texto */
+    width: 100%; /* Asegura que ocupe el ancho completo */
+}
